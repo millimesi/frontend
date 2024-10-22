@@ -1,0 +1,60 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.card-container{
+    margin: 10px;
+    padding: 10px;
+    background-color: gainsboro;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px 2px gray;
+}
+
+.card-container h2{
+    font-size: 16pt;
+}
+
+.card-container p{
+    font-size: 10pt;
+    margin: 15px 0;
+}
+
+.card-container a{
+    text-decoration: none;
+    padding: 5px 10px; 
+    background-color: black;
+    border-radius: 7px;
+    box-shadow: 1px 2px 2px gray;
+    color: white;
+    font-size: 10pt;
+}
+
+
+
+
+/* indigo background inner element style */
+.card-container-bg-indigo{
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(221, 221, 244);
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px 2px gray;
+}
+
+.card-container-bg-indigo p{
+    font-size: 10pt;
+    margin: 15px 0;
+}
+
+.card-container-bg-indigo a{
+    text-decoration: none;
+    padding: 5px 10px; 
+    background-color: rgb(63, 30, 248);
+    border-radius: 7px;
+    box-shadow: 1px 2px 2px gray;
+    color: white;
+    font-size: 10pt;
+}
+
+

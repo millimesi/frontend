@@ -1,0 +1,73 @@
+.joblisiting{
+    background-color: rgb(221, 221, 244);
+    padding: 20px;
+}
+
+.joblisiting h2{
+    text-align: center;
+    color: blue;
+}
+
+/* columen and row with flex box */
+.joblisiting .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.joblisiting .container .job-detail{
+    width: 30%;
+    background-color: white;
+    margin: 10px 0 0 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px gray;
+}
+
+.joblisiting .container .job-detail .type{
+    font-size: 10pt;
+    margin-bottom: 10px;
+}
+
+.joblisiting .container .job-detail h3{
+    font-size: 14pt;
+    margin-bottom: 5px;
+}
+
+.joblisiting .container .job-detail p{
+    font-size: 11pt;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; /* Number of lines to show */
+    line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.joblisiting .container .job-detail .salary{
+    font-size: 11pt;
+    color: blue;
+    margin-bottom: 5px;
+}
+
+.joblisiting .container .job-detail .location{
+    font-size: 11pt;
+    color: red;
+    margin-bottom: 8px;
+}
+
+.joblisiting .container .job-detail .read-more{
+    display: flex;
+    justify-content: center;
+}
+.joblisiting .container .job-detail a{
+    text-decoration: none;
+    width: 70%;
+    background-color: blue;
+    text-align: center;
+    padding: 6px;
+    border-radius: 6px;
+    color: white;
+    font-size: 11pt;
+}
+/* column and row with grid */

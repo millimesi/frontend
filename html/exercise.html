@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>html exercise</title>
+        <style>
+            *, *::before, *::after {box-sizing: border-box;}
+            *{
+                margin: 0;
+            }
+            .border-black{
+                border: solid black 2px;
+            }
+            h1{
+                font-size: 14pt;
+            }
+            /* adding Border to the table */
+            table, th, td{
+                border: solid green 2px;
+                border-collapse: collapse;
+                padding: 10px;
+            }
+            /* make the table header left aligned */
+            th{
+                text-align: left;
+            }
+
+            /* table background color */
+            table#job-experience{
+                background-color: aquamarine;
+            }
+        </style>
+    </head>
+    <body>
+   
+    <header class="border-black">
+
+                <a href="http://lightit.unaux.com/about/" target="_blank">
+                    <figure>                   
+                        <img src="./images/million-removebg-preview (1).png" title="Million Meseret - CEO" alt="Million Meseret - CEO" width="220px" height="250px" class="border-black">
+                        <figcaption>Million Meseret: software Engineer at light it</figcaption>
+                    </figure>
+                </a>
+                <h1>Hello! I am <b>Million Meseret</b></h1>
+    </header>
+    <nav class="border-black">
+        <a href="#About me">About me</a> |
+        <a href="#Job Experience">Job Experience</a> |
+        <a href="#">Projects</a> |
+        <a href="#">light it</a> |
+        <a href="#">Education</a> | 
+        <a href="#">Skills</a> |
+        <a href="#">Intersted in</a>
+    </nav>
+    <section id="About me" class="border-black" style="padding-left: 10px;">
+            <h1>About me</h1>
+            <p>
+                I am a young, dedicated, and innovative engineer, leader, researcher, instructor, and entrepreneur with a passion for building problem-solving products and systems. My strong educational background, extensive skills, and unwavering commitment have empowered me to transform ideas into practical solutions. I am driven by the desire to create impactful technologies and lead projects that drive progress and efficiency.
+            </p>
+    </section>
+    <section id="Job Experience" class="border-black" style="padding-left: 10px;">
+        <h1>Job Experience</h1>
+        <table id="job-experience">
+            <caption style="text-align: left;">Job experience details</caption>
+            <tr>
+                <th>Company name</th>
+                <th>Position Title</th>
+                <th>Role</th>
+                <th>Start date</th>
+                <th>End date</th>
+                <th>Employment Status</th>
+            </tr>
+            <tr>
+                <td>Assosa University</td>
+                <td>Lecturer</td>
+                <td>Instructing, advising and 
+                    <br>mentoring Students</td>
+                <td>Nov, 2018</td>
+                <td>Present</td>
+                <td>Full time</td>
+            </tr>
+        </table>
+        
+    </section>
+    <footer class="border-black">
+        <a href="mailto:millionmesi1@gmail.com" class="border-black">Email: millionmesi1&commat;gmail.com</a>
+    </footer>
+</body>   
+</html>
