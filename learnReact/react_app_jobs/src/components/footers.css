@@ -4,7 +4,7 @@
   justify-content: center;
 }
 
-.footer-container p {
+.footer-container a {
   background-color: black;
   padding: 5px;
   width: 20%;
@@ -12,4 +12,5 @@
   color: white;
   border-radius: 5px;
   text-align: center;
+  text-decoration: none;
 }

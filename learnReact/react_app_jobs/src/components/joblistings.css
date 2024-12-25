@@ -78,3 +78,8 @@
   color: blue;
   margin-bottom: 10px;
 }
+
+.location-icon {
+  display: inline-block;
+  color: blueviolet;
+}

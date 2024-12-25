@@ -1,0 +1,13 @@
+.not-found {
+  margin: 10px 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* width: 100vw; */
+}
+
+.exclamation-tringle {
+  color: yellow;
+  width: 100px;
+  height: 100px;
+}
