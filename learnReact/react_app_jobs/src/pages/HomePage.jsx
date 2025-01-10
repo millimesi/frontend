@@ -9,7 +9,7 @@ function HomePage() {
     <>
       <Hero />
       <HomeCard />
-      <JobListings />
+      <JobListings isHome={true} />
       <JobFooter />
     </>
   );

@@ -1,7 +1,8 @@
 import React from "react";
+import JobListings from "../components/JobListings";
 
 function JobPage() {
-  return <div>JobPage</div>;
+  return <JobListings />;
 }
 
 export default JobPage;
