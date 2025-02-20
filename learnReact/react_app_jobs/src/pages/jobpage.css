@@ -1,0 +1,132 @@
+.back-container {
+  margin: auto;
+  padding: 10px 40px;
+  /* border: 2px solid black; */
+}
+
+.back-container .linked {
+  text-decoration: none;
+  color: blue;
+  height: auto;
+  width: auto;
+}
+
+.back-container .left-arrow {
+  /* border: 2px solid black; */
+  /* margin-right: 0.5rem; */
+  font-size: 0.8rem;
+  /* display: inline-blockb; */
+}
+
+.indigowhite {
+  background-color: rgb(230, 230, 248);
+  /* height: 100vh; */
+}
+.container {
+  margin: auto;
+  padding: 0.8rem 0.8rem;
+  width: 99vw;
+}
+
+.gridded {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap: 10px 15px;
+  margin: 0 10px;
+}
+
+.titleArea {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px gray;
+  margin: 15px 0;
+  padding: 15px 10px;
+}
+.workcondition {
+  margin-bottom: 0.5rem;
+  font-size: smaller;
+}
+.titleArea h1 {
+  margin-bottom: 0.8rem;
+}
+.locationIcon {
+  font-size: 0.8rem;
+  margin-right: 5px;
+  color: rgb(226, 6, 6);
+}
+.workarea {
+  display: inline;
+  color: rgb(226, 6, 6);
+}
+.jobdesc {
+  font-size: 16px;
+  color: blue;
+  margin-bottom: 0.8rem;
+}
+
+.desc {
+  margin-bottom: 0.7rem;
+}
+.companyinfo {
+  margin-bottom: 1rem;
+  font-size: smaller;
+}
+.companyName {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+.companydesc {
+  font-size: 0.9rem;
+  margin-bottom: 0.7rem;
+  text-align: left;
+}
+.conttype {
+  font-size: 0.9rem;
+  margin-bottom: 0.7rem;
+}
+.contdesc {
+  font-size: 0.9rem;
+  margin-bottom: 0.7rem;
+  background-color: rgb(230, 230, 248);
+  padding: 5px 5px;
+  font-weight: 700;
+  /* padding-bottom: 30px; */
+  /* height: 100vh; */
+}
+
+.editJob {
+  background-color: rgb(0, 0, 255);
+  border-radius: 15px;
+  color: white;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding: 5px;
+  margin: 0 15px;
+  margin-bottom: 0.7rem;
+  width: 90%;
+}
+
+.editJob:hover {
+  background-color: rgb(0, 0, 255, 0.8);
+}
+
+.editJobb {
+  background-color: rgb(199, 0, 0);
+  border-radius: 15px;
+  color: white;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding: 5px;
+  margin: 0 15px;
+  margin-bottom: 0.7rem;
+  border: none;
+  width: 90%;
+  /* display: block; */
+}
+
+.editJobb:hover {
+  background-color: rgb(199, 0, 0, 0.8);
+}
