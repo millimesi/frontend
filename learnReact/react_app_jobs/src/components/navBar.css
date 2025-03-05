@@ -8,6 +8,7 @@ nav {
 nav h1 {
   margin-left: 5px;
   color: white;
+  display: inline;
 }
 
 .Nav_list {

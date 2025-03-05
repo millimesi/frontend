@@ -1,7 +1,7 @@
 import React from "react";
 import reactLogo from "../assets/react.svg";
 import "./navBar.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 const NavBar = () => {
   const navLinkClass = ({ isActive }) => {
@@ -9,8 +9,11 @@ const NavBar = () => {
   };
   return (
     <nav>
-      <img className="Nav_logo" src={reactLogo} alt="react logo" />
-      <h1 className="Nav_titel_name">React Jobs</h1>
+      <Link to="/">
+        <img className="Nav_logo" src={reactLogo} alt="react logo" />
+        <h1 className="Nav_titel_name">React Jobs</h1>
+      </Link>
+
       <ul className="Nav_list">
         <li>
           <NavLink to="/" className={navLinkClass}>

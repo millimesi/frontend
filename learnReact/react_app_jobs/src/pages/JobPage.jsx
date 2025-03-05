@@ -1,12 +1,13 @@
 import React from "react";
-import { useParams, useLoaderData, Link } from "react-router-dom";
+import { useParams, useLoaderData, Link, useNavigate } from "react-router-dom";
 import "./jobpage.css";
 import { FaArrowLeft } from "react-icons/fa";
 import { FaMapMarker } from "react-icons/fa";
+import { toast } from "react-toastify";
 // import Spinner from "../components/Spinner";
 // // import { useEffect, useState } from "react";
 
-function JobPage() {
+function JobPage({ deleteJob }) {
   // Data fetching and using it with useEffect
   // const { id } = useParams();
   // const [job, setJob] = useState(null);
@@ -30,8 +31,22 @@ function JobPage() {
 
   // return loading ? <Spinner /> : <h1>{job.title}</h1>;
 
-  const { id } = useParams();
+  // Use navigate requires to be initialliezed
+  const Navigate = useNavigate();
   const job = useLoaderData();
+  const handleDeleteJob = (jobid) => {
+    const confirm = window.confirm(
+      "Are you sure do you want to delete this listing?"
+    );
+
+    if (!confirm) return;
+
+    deleteJob(jobid);
+
+    toast.success("Job deleted successfully.");
+
+    Navigate("/jobs");
+  };
 
   return (
     <>
@@ -43,7 +58,7 @@ function JobPage() {
         </div>
       </section>
       <section className="indigowhite">
-        <div className="container">
+        <div className="ontainer">
           <div className="gridded">
             <main>
               <div className="titleArea">
@@ -88,10 +103,15 @@ function JobPage() {
               {/* <!-- Manage --> */}
               <div className="titleArea">
                 <h3 className="companyinfo">Manage Job</h3>
-                <Link to={`/jobs/edit/${job.id}`} className="editJob">
+                <Link to={`/edit-jobs/${job.id}`} className="editJob">
                   Edit Job
                 </Link>
-                <button className="editJobb">Delete Job</button>
+                <button
+                  onClick={() => handleDeleteJob(job.id)}
+                  className="editJobb"
+                >
+                  Delete Job
+                </button>
               </div>
             </aside>
           </div>
